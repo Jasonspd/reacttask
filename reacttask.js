@@ -89,8 +89,8 @@ class MainApp extends Component {
 }
 
 ReactDOM.render(
-  <Mainapp />,
-  document.getElementById('content')
+	<Mainapp />,
+	document.getElementById('content')
 );
 
 //Summary: 
