@@ -10,8 +10,8 @@ const customers = [
   {names: {first: 'Nicole', last: 'Angels'}}
 ];
 
-//items is the array, but array is structured differently
-//itemComponent must be a way to distinguish between the two types of structures?
+//{items} is data, but the arrays are structured differently
+//[itemComponent] is used to distiguish between the two
 
 //Need some sort of logic to define structure?
 class WeatherReport extends Component {
@@ -51,8 +51,8 @@ class Dropdown extends Component {
 		//if this.props.itemComponent == 0, map an array of objects
 		//Problem - I need to know how many keys there are in the object? And I need to know the type to pick the correct image e.g. cloudy
 
+
 		//if this.props.itemComponent == 1, map an array of objects with a nested object
-		
 		//Customers TODO - map the array of customers? for in loop to get values?
 		//Push them into a new array and display them on the page?
 		var obj = customers[0];
@@ -63,7 +63,7 @@ class Dropdown extends Component {
 		}
 		
 
-		//Not very reusable
+		//Hard code testing
 		var weather = weatherReport.map(function(w){
 
 			  return <div className="weather">{w.city} | {w.temperature} | {w.type}</div>;
@@ -100,4 +100,4 @@ ReactDOM.render(
 // -Pictures of weather would be just matching the strings with images?
 // -Random background colour, would be looping through 6 digits adding # then 0123456789ABCDEF.split('') with Math.floor(Math.random())
 
-// npm module react-dropdown has a similar solution but I didn't have time to grasp it
+// npm module react-dropdown has a similar solution but I didn't have time to understand it within 90mins
