@@ -100,4 +100,4 @@ ReactDOM.render(
 // -Pictures of weather would be just matching the strings with images?
 // -Random background colour, would be looping through 6 digits adding # then 0123456789ABCDEF.split('') with Math.floor(Math.random())
 
-// npm module react-dropdown has a similar solution but I didn't have time to understand it within 90mins
+// npm module react-dropdown has a similar solution but I didn't have time to understand it within 90mins.
